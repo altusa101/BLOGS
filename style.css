@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lilita+One&family=Playwrite+DE+SAS:wght@100..400&display=swap');
+
+:root{
+    ---mainbg : #121212;
+    ---search : #1a1a1a;
+    ---varient : #1e1e1e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(---mainbg);
+}
+
+nav{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    #logo{
+        height: 170%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
+    }
+    #srchbar{
+       width: 500px;
+       height: 40px;
+       margin-top: 50px;
+       background-color: var(---varient);
+       border-radius: 50px;
+       color: white;
+       padding-left: 15px;
+       border: 0px solid transparent;
+       outline: none;
+       padding-right: 10px;
+    }
+}
+
+#srchbar::placeholder {
+   font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+#heading{
+    width: 100vw;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+    position: relative;
+}
+.lineup{
+        width: 100%;
+        height: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 20px;
+        color: #bababa;
+        img{
+            height: 100%;
+        }
+        cursor: pointer;
+}
+
+
+#blogs{
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+#posts{
+    width: 100vW;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.post{
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid rgb(76, 76, 76);
+    height: 300px;
+    background-color: var(---varient);
+    color: white;
+    list-style: none;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    .header{
+        width: 100%;
+        height: 25%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        padding-left: 7px;
+        .h2{
+            font-size: 21px;
+        }
+        .p{
+            font-size: 11px;
+            font-family: "JetBrains Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+        }
+        img{
+            width: 40px;
+            background-color: white;
+            padding: 4px;
+            border-radius: 50PX;
+        }
+    }
+    .desc{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+         font-size: 13px;
+            font-family: "JetBrains Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+        word-spacing: 5px;
+        line-height: 20px;
+    }
+}

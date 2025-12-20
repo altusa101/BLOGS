@@ -25,7 +25,15 @@ nav{
     justify-content: center;
     align-items: center;
     position: relative;
-
+    #git{
+        height: 80%;
+        border-radius: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-20%);
+        right: 50px;
+        cursor: pointer;
+    }
     #logo{
         height: 170%;
         position: absolute;
@@ -70,6 +78,7 @@ nav{
     font-size: 30px;
     position: relative;
 }
+
 .lineup{
         width: 100%;
         height: 20px;
@@ -88,6 +97,7 @@ nav{
 }
 
 
+
 #blogs{
     width: 100vw;
     min-height: 50vh;
@@ -96,6 +106,7 @@ nav{
     flex-wrap: wrap;
     margin-top: 100px;
 }
+
 #posts{
     width: 100vW;
     min-height: 50vh;
@@ -119,6 +130,7 @@ nav{
     font-weight: 10;
     font-style: normal;
     font-variation-settings:"wdth" 100;
+    cursor: pointer;
     .header{
         width: 100%;
         height: 25%;
@@ -158,5 +170,59 @@ nav{
             font-style: normal;
         word-spacing: 5px;
         line-height: 20px;
+       position: relative;
     }
 }
+
+#tag{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    gap: 20px;
+ }
+
+ .active,.topic , .pending, .Project, .notstr, .working{
+    padding: 5px;
+    border: 1px solid white ;
+    border-radius: 5px;
+    font-size: 12px;
+ }
+
+ .active{
+    background-color: rgba(0, 90, 0, 0.501);
+    color: green;
+    border-color: green;
+ }
+
+ .topic{
+    background-color: rgba(56, 92, 235, 0.43);
+    color: white;
+    border-color: blue;
+ }
+
+  .pending{
+    background-color: rgba(114, 132, 12, 0.341);
+    color: yellow;
+    border-color: yellow;
+ }
+
+ .Project{
+    background-color: rgba(122, 12, 132, 0.341);
+    color: rgb(151, 2, 151);
+    border-color: rgb(151, 2, 151);
+ }
+ 
+
+ .notstr{
+    background-color: rgba(132, 26, 12, 0.341);
+    color: red;
+    border-color: red;
+ }
+ .working{
+    background-color: rgba(96, 96, 96, 0.341);
+    color: rgb(255, 255, 255);
+    border-color: rgb(107, 107, 107);
+ }
